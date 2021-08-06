@@ -1,4 +1,4 @@
 theme: jekyll-theme-architect
 title: M-Chan
 description: Welcome to my random website!
-plugins: -jemoji
+plugins: jemoji
