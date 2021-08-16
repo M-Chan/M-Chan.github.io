@@ -1,0 +1,20 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.header {
+  padding: 24px;
+  text-align: center;
+  background: rgb(60, 130, 207);
+  line-height: 70px;
+}
+
+.main {
+  margin-top: 5vh;
+  margin-left: 5vw;
+
+  font-family: "perpetua, helvetica";
+  font-size: 20px;
+  line-height: 35px;
+}
