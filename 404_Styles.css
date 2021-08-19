@@ -13,31 +13,31 @@ body {
 .header {
   padding: 24px;
   text-align: center;
-  /* background: rgb(60, 130, 207); */
   line-height: 70px;
 }
 
 .main {
-  margin-top: 5vh;
-  margin-left: 5vw;
+  text-align: center;
 
   font-family: "perpetua, helvetica";
-  font-size: 20px;
-  line-height: 35px;
+  font-size: 40px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
 }
 
 #error{
+	
 	background-image: url(assets/404.png);
-	background-attachment: fixed;
-
-	
-    background-position: center, left top;
 	background-repeat: no-repeat;
+    background-position: center;
 
-	background-size: 50%;
+	background-size: 70%;
 	
-	width: 100vw;
-	height: 100vh;
+	width: 50vw;
+	height: 50vh;
 	
 	margin:0;
 	padding:0;
