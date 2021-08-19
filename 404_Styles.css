@@ -25,3 +25,20 @@ body {
   font-size: 20px;
   line-height: 35px;
 }
+
+#error{
+	background-image: url(assets/404.png);
+	background-attachment: fixed;
+
+	
+    background-position: center, left top;
+	background-repeat: no-repeat;
+
+	background-size: 50%;
+	
+	width: 100vw;
+	height: 100vh;
+	
+	margin:0;
+	padding:0;
+}
