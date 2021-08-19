@@ -17,6 +17,10 @@ body {
   line-height: 70px;
 }
 
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
 .main {
   margin-top: 5vh;
   margin-left: 5vw;
