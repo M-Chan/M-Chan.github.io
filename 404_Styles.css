@@ -32,7 +32,7 @@ a:link, a:visited, a:hover, a:active {
 	
 	background-image: url(assets/404.png);
 	background-repeat: no-repeat;
-        background-position: center;
+  background-position: center;
 
 	background-size: 70%;
 	
@@ -59,4 +59,23 @@ a:link, a:visited, a:hover, a:active {
 .leftNote {
   position: absolute;
   left: 4vw;
+}
+
+.bottomButtons {
+  position: relative;
+  top: 50px;
+}
+
+.leftButton {
+  position: absolute;
+  left: 4vw;
+}
+
+.linkButtons {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
