@@ -29,7 +29,6 @@ a:link, a:visited, a:hover, a:active {
 }
 
 #error{
-	
 	background-image: url(assets/404.png);
 	background-repeat: no-repeat;
   background-position: center;
@@ -51,31 +50,51 @@ a:link, a:visited, a:hover, a:active {
   margin: 0;
 }
 
-.bottomNote {
-  position: relative;
-  top: 40px;
-}
+.note {
+  font-size: 20px;
 
-.leftNote {
   position: absolute;
   left: 4vw;
+
+  margin-top: 40px;
 }
 
 .bottomButtons {
   position: relative;
-  top: 50px;
+  top: 80px;
 }
 
 .leftButton {
   position: absolute;
-  left: 4vw;
+  left: 12vw;
 }
 
 .linkButtons {
-  background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 5px rgba(169, 89, 230, 0.685);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  z-index: 2;
+}
+
+#homeButton {
+  background-image: url(assets/Home.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+
+	background-size: 80%;
+	
+	width: 16vw;
+	height: 11vh;
+}
+
+#githubButton {
+  background-image: url(assets/GitHub.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+	background-size: 80%;
+	
+	width: 16vw;
+	height: 11vh;
 }
