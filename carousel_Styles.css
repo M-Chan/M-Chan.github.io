@@ -1,0 +1,30 @@
+
+.carouselContainer {
+
+}
+
+.carouselText {
+
+}
+
+#hackathonsSlide{
+    background-image: url(assets/Devpost.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+	background-size: 80%;
+
+    width: 10vw;
+	height: 8vh;
+}
+
+#githubSlide{
+    background-image: url(assets/GitHub.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+	background-size: 80%;
+    
+    width: 10vw;
+	height: 8vh;
+}
