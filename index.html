@@ -4,6 +4,8 @@
 		<title>M-Chan</title>
 		<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.png">
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="carousel_Styles.css">
+		<script async type="text/javascript" src="carousel_Script.js"></script>
 	</head>
 	
 <body>
@@ -19,11 +21,30 @@
 		<a href="https://github.com/M-Chan"><div id="githubButton" class="linkButtons"></div></a>
 	</div>
 	
-<div class="mainText">
-<p>
+	<div class="mainText">
+	<p>
 Experimental Physics student independently learning to code. Here, on this website, I will be showcasing the programming projects I have worked on! </br>
 Please click the top-right button to get to my github page where you can see my repositories full of the code used to build these projects and everyone I have collaborated with.
-</p>
-</div>
+	</p>
+	</div>
+
+	<div class="bottomCarouselContainer">
+		<div class="carouselContainer">
+			<a href="https://github.com/M-Chan">
+				<div id="githubSlide" class="slide slide--visible carouselText">
+					<p>GitHub Profile</p>
+				</div>
+			</a>
+
+			<a href="https://devpost.com/M-Chan">
+				<div id="hackathonsSlide" class="slide slide--hidden carouselText">
+					<p>Devpost Profile</p>
+				</div>
+			</a>
+		</div>
+	
+		<button type="button" id="prevButton" onclick="prev()">&#x2039</button>
+		<button type="button" id="nextButton" onclick="next()">&#x203A</button>
+	</div>
 </body>
 </html>
