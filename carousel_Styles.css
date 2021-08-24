@@ -73,29 +73,16 @@ button:hover{
 
 .carouselText {
     color:rgb(171, 222, 250);
+    /* text-shadow: 1px 1px 1px 1px rgb(0, 0, 0); */
+    text-shadow:
+        1px 1px #000, -1px 1px #000, 1px -1px #000, -1px -1px #000,
+        0 1px #000, 0 -1px #000, -1px 0 #000, 1px 0 #000,
+        2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000,
+        0 2px #000, 0 -2px #000, -2px 0 #000, 2px 0 #000,
+        
+        1px 2px #000, -1px 2px #000, 1px -2px #000, -1px -2px #000,
+        2px 1px #000, -2px 1px #000, 2px -1px #000, -2px -1px #000;
     font-family: perpetua, helvetica;
     font-size: 6vh;
     text-align: center;
-}
-
-#githubSlide{
-    background-image: url(assets/GitHub.png);
-    background-repeat: no-repeat;
-    background-position: center;
-
-	background-size: 100%;
-    
-    width: 50vw;
-	height: 52vh;
-}
-
-#hackathonsSlide{
-    background-image: url(assets/Devpost.png);
-    background-repeat: no-repeat;
-    background-position: center;
-
-	background-size: 100%;
-
-    width: 50vw;
-	height: 52vh;
 }
