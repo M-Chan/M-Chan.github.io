@@ -58,14 +58,12 @@ a:link, a:visited, a:hover, a:active {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: cursive;
 }
 
 section {
   height: 100vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   scroll-snap-align: start;
 }
@@ -78,7 +76,16 @@ section {
 
 #page1 {
   background-image: linear-gradient(to bottom, rgba(107, 0, 190, 0.76), #31cdff);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'oleo script', verdana;
+  font-size: 13vh;
 }
+
+#page1 h1{color: white;}
 
 #page2 {
   background-image: linear-gradient(to top, rgba(107, 0, 190, 0.76), #31cdff);
@@ -110,5 +117,32 @@ section {
 =======
   /* background-color: rgba(255, 255, 255, 0.712); */
   background-color: rgb(95, 134, 231);
+<<<<<<< HEAD
 >>>>>>> d443d4c (customised scrollbar)
+=======
+}
+
+#aboutMeTitle{
+  /* border: 3px solid blue; */
+  border: none;
+  height: 6vh;
+  width: 36%;
+
+  position: relative;
+  transform: translateX(-50%);
+  top: 25%;
+  left: 75%;
+}
+
+#aboutMeText {
+  /* border: 3px solid black; */
+  border: none;
+  height: 20vh;
+  width: 36%;
+
+  position: relative;
+  transform: translateX(-50%);
+  top: 25%;
+  left: 75%;
+>>>>>>> b136b5a (altered layout)
 }
