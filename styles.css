@@ -99,10 +99,16 @@ section {
 
 .container::-webkit-scrollbar-button{
   height: 5vh;
-  background-color: rgba(86, 46, 231, 0.938);
+  /* background-color: rgba(86, 46, 231, 0.938); */
+  background-color: rgb(95, 134, 231);
 }
 
 .container::-webkit-scrollbar-thumb{
+<<<<<<< HEAD
   background-color: rgba(255, 255, 255, 0.712);
 >>>>>>> bb017ec (customised scrollbar)
+=======
+  /* background-color: rgba(255, 255, 255, 0.712); */
+  background-color: rgb(95, 134, 231);
+>>>>>>> d443d4c (customised scrollbar)
 }
