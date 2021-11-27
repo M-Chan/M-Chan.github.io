@@ -77,6 +77,8 @@ section {
 #page1 {
   background-image: linear-gradient(to bottom, rgba(107, 0, 190, 0.76), #31cdff);
 
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,14 +90,21 @@ section {
 #page1 h1{color: white;}
 
 #page2 {
+  display: block;
+  position: relative;
   background-image: linear-gradient(to top, rgba(107, 0, 190, 0.76), #31cdff);
 }
 
 #page3 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-image: linear-gradient(to bottom, rgba(107, 0, 190, 0.76), #31cdff);
 >>>>>>> 2f10912 (initial revamp)
 =======
+=======
+  display: block;
+  position: relative;
+>>>>>>> 5003fb7 (update 'about me' section)
   background-image: linear-gradient(to bottom, rgba(107, 0, 190, 0.76), #31cdff);
 }
 
@@ -122,15 +131,33 @@ section {
 =======
 }
 
+#profilePhoto{
+  /* border: 3px solid black; */
+  border-radius: 50%;
+  
+  height: 40vh;
+  width: 40vh;
+
+  position: absolute;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  top: 50%;
+  left: 20%;
+
+  background-image: url(assets/profilePicture.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 #aboutMeTitle{
   /* border: 3px solid blue; */
   border: none;
   height: 6vh;
   width: 36%;
 
-  position: relative;
+  position: absolute;
   transform: translateX(-50%);
-  top: 25%;
+  top: 40%;
   left: 75%;
 }
 
@@ -140,9 +167,10 @@ section {
   height: 20vh;
   width: 36%;
 
-  position: relative;
+  position: absolute;
   transform: translateX(-50%);
-  top: 25%;
+  /* transform: translateY(-50%); */
+  top: 46%;
   left: 75%;
 >>>>>>> b136b5a (altered layout)
 }
