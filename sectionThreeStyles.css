@@ -103,7 +103,7 @@
   position: absolute;
   
   transform: translateY(-50%);
-  top: 50%;
+  top: 52%;
   right: 2%;
 
   display: flex;
@@ -133,6 +133,12 @@
 
 #projectImage1{
   background-image: url(assets/fixable_logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#projectImage3{
+  background-image: url(assets/whiteKing.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
