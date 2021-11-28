@@ -19,3 +19,47 @@
   top: 5%;
   left: 50%;
 }
+
+.projectBox{
+  border: 3px solid black;
+  border-radius: 10%;
+
+  height: 36vh;
+  width: 36%;
+}
+
+#projectBox1{
+  border: 3px solid red;
+  
+  position: absolute;
+
+  top: 18%;
+  left: 10%;
+}
+
+#projectBox2{
+  border: 3px solid rgb(233, 155, 9);
+  
+  position: absolute;
+
+  top: 18%;
+  right: 10%;
+}
+
+#projectBox3{
+  border: 3px solid rgb(255, 255, 0);
+  
+  position: absolute;
+
+  bottom: 5%;
+  left: 10%;
+}
+
+#projectBox4{
+  border: 3px solid rgb(41, 218, 41);
+  
+  position: absolute;
+
+  bottom: 5%;
+  right: 10%;
+}
