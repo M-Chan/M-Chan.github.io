@@ -137,6 +137,12 @@
   background-repeat: no-repeat;
 }
 
+#projectImage2 {
+  background-image: url(assets/Phyphox-Experiment.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #projectImage3{
   background-image: url(assets/whiteKing.png);
   background-size: cover;
