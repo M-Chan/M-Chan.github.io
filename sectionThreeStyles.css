@@ -11,25 +11,29 @@
   width: 20%;
 
   text-align: center;
-  font-size: 3vh;
+  font-size: 3.5vh;
 
   position: absolute;
   transform: translateX(-50%);
   /* transform: translateY(-50%); */
-  top: 5%;
+  top: 4.5%;
   left: 50%;
 }
 
 .projectBox{
-  border: 3px solid black;
+  /* border: 3px solid black; */
+  
+  background: rgba(255, 255, 255, 0.25);
+  border: 3px solid rgba(255, 255, 255, 0.15);
   border-radius: 10%;
+  box-shadow: 0 8px 32px 5px rgba(169, 89, 230, 0.685);
 
   height: 36vh;
   width: 36%;
 }
 
 #projectBox1{
-  border: 3px solid red;
+  /* border: 3px solid red; */
   
   position: absolute;
 
@@ -38,7 +42,7 @@
 }
 
 #projectBox2{
-  border: 3px solid rgb(233, 155, 9);
+  /* border: 3px solid rgb(233, 155, 9); */
   
   position: absolute;
 
@@ -47,7 +51,7 @@
 }
 
 #projectBox3{
-  border: 3px solid rgb(255, 255, 0);
+  /* border: 3px solid rgb(255, 255, 0); */
   
   position: absolute;
 
@@ -56,7 +60,7 @@
 }
 
 #projectBox4{
-  border: 3px solid rgb(41, 218, 41);
+  /* border: 3px solid rgb(41, 218, 41); */
   
   position: absolute;
 
