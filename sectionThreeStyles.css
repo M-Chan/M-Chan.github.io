@@ -30,6 +30,8 @@
 
   height: 36vh;
   width: 36%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   position: absolute;
 }
