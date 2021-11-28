@@ -25,13 +25,15 @@
 #aboutMeTitle{
   /* border: 3px solid blue; */
   border: none;
-  height: 6vh;
+  height: 8vh;
   width: 36%;
 
   position: absolute;
   transform: translateX(-50%);
-  top: 40%;
+  top: 36%;
   left: 75%;
+
+  font-size: 4vh;
 }
 
 #aboutMeText {
@@ -45,4 +47,6 @@
   /* transform: translateY(-50%); */
   top: 46%;
   left: 75%;
+
+  font-size: 4h;
 }
