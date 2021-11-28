@@ -1,59 +1,3 @@
-<<<<<<< HEAD
-*{
-	padding: 0;
-	margin: 0;
-}
-
-body {
-  background-image: linear-gradient(to bottom, rgba(107, 0, 190, 0.76), #31cdff);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.header {
-  padding: 24px;
-  text-align: center;
-  line-height: 70px;
-}
-
-a:link, a:visited, a:hover, a:active {
-  text-decoration: none;
-}
-
-.linkButtons {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 5px rgba(169, 89, 230, 0.685);
-  border-radius: 10px;
-  border: 3px solid rgba(255, 255, 255, 0.15);
-  z-index: 2;
-}
-
-#githubButton {
-  background-image: url(assets/GitHub.png);
-  background-repeat: no-repeat;
-  background-position: center;
-
-	background-size: 80%;
-	
-  width: 10vw;
-	height: 8vh;
-
-  position: absolute;
-  top: 50px;
-  right: 4vw;
-}
-
-.mainText {
-  margin-top: 0;
-  margin-left: 4vw;
-  margin-right: 4vw;
-
-  font-family: "perpetua, helvetica";
-  font-size: 20px;
-  text-align: center;
-  line-height: 35px;
-=======
 * {
   margin: 0;
   padding: 0;
@@ -74,57 +18,6 @@ section {
   height: 100vh;
 }
 
-<<<<<<< HEAD
-#page1 {
-  background-image: linear-gradient(to bottom, rgba(107, 0, 190, 0.76), #31cdff);
-
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-family: 'oleo script', verdana;
-  font-size: 13vh;
-}
-
-#page1 h1{
-  position:absolute;
-  top: 25%;
-  color: white;
-}
-
-#page1 footer{
-  position: absolute;
-  bottom: 5%;
-}
-
-footer li{
-  display: inline-block;
-  font-size: 5vh;
-}
-
-#page2 {
-  display: block;
-  position: relative;
-  background-image: linear-gradient(to top, rgba(107, 0, 190, 0.76), #31cdff);
-}
-
-#page3 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    background-image: linear-gradient(to bottom, rgba(107, 0, 190, 0.76), #31cdff);
->>>>>>> 2f10912 (initial revamp)
-=======
-=======
-  display: block;
-  position: relative;
->>>>>>> 5003fb7 (update 'about me' section)
-  background-image: linear-gradient(to bottom, rgba(107, 0, 190, 0.76), #31cdff);
-}
-
-=======
->>>>>>> 1382642 (split up CSS files into the sections)
 .container::-webkit-scrollbar{
   background-image: linear-gradient(to bottom, rgba(107, 0, 190, 0.76), #31cdff);
   width: 20px;
@@ -137,83 +30,8 @@ footer li{
 }
 
 .container::-webkit-scrollbar-thumb{
-<<<<<<< HEAD
-  background-color: rgba(255, 255, 255, 0.712);
->>>>>>> bb017ec (customised scrollbar)
-=======
   /* background-color: rgba(255, 255, 255, 0.712); */
   background-color: rgb(95, 134, 231);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> d443d4c (customised scrollbar)
-=======
-}
-
-#profilePhoto{
-  /* border: 3px solid black; */
-  border-radius: 50%;
-  
-  height: 40vh;
-  width: 40vh;
-
-  position: absolute;
-  transform: translateX(-50%);
-  transform: translateY(-50%);
-  top: 50%;
-  left: 20%;
-
-  background-image: url(assets/profilePicture.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-#aboutMeTitle{
-  /* border: 3px solid blue; */
-  border: none;
-  height: 6vh;
-  width: 36%;
-
-  position: absolute;
-  transform: translateX(-50%);
-  top: 40%;
-  left: 75%;
-}
-
-#aboutMeText {
-  /* border: 3px solid black; */
-  border: none;
-  height: 20vh;
-  width: 36%;
-
-  position: absolute;
-  transform: translateX(-50%);
-  /* transform: translateY(-50%); */
-  top: 46%;
-  left: 75%;
-<<<<<<< HEAD
->>>>>>> b136b5a (altered layout)
-=======
-}
-
-#myProjectsTitle {
-  /* border: 3px solid black; */
-  border: none;
-  height: 10%;
-  width: 20%;
-
-  text-align: center;
-  font-size: 3vh;
-
-  position: absolute;
-  transform: translateX(-50%);
-  /* transform: translateY(-50%); */
-  top: 5%;
-  left: 50%;
->>>>>>> 40969f3 (altered sections 1 and 3)
-=======
->>>>>>> 1382642 (split up CSS files into the sections)
-=======
 }
 
 a{
@@ -223,5 +41,4 @@ a{
 a:hover{
   color: white;
   text-decoration: none;
->>>>>>> 01c96db (altering hyperlink appearances)
 }
