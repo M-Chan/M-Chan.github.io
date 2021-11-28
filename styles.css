@@ -145,6 +145,7 @@ footer li{
   background-color: rgb(95, 134, 231);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> d443d4c (customised scrollbar)
 =======
 }
@@ -212,4 +213,15 @@ footer li{
 >>>>>>> 40969f3 (altered sections 1 and 3)
 =======
 >>>>>>> 1382642 (split up CSS files into the sections)
+=======
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  color: white;
+  text-decoration: none;
+>>>>>>> 01c96db (altering hyperlink appearances)
 }
