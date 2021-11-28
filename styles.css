@@ -87,7 +87,21 @@ section {
   font-size: 13vh;
 }
 
-#page1 h1{color: white;}
+#page1 h1{
+  position:absolute;
+  top: 25%;
+  color: white;
+}
+
+#page1 footer{
+  position: absolute;
+  bottom: 5%;
+}
+
+footer li{
+  display: inline-block;
+  font-size: 5vh;
+}
 
 #page2 {
   display: block;
@@ -172,5 +186,24 @@ section {
   /* transform: translateY(-50%); */
   top: 46%;
   left: 75%;
+<<<<<<< HEAD
 >>>>>>> b136b5a (altered layout)
+=======
+}
+
+#myProjectsTitle {
+  /* border: 3px solid black; */
+  border: none;
+  height: 10%;
+  width: 20%;
+
+  text-align: center;
+  font-size: 3vh;
+
+  position: absolute;
+  transform: translateX(-50%);
+  /* transform: translateY(-50%); */
+  top: 5%;
+  left: 50%;
+>>>>>>> 40969f3 (altered sections 1 and 3)
 }
