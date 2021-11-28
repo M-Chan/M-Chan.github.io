@@ -54,18 +54,21 @@
   /* border: 3px solid rgb(255, 255, 0); */
 
   bottom: 5%;
-  left: 10%;
+  transform: translateX(-50%);
+  left: 50%;
 }
 
 #projectBox4{
   /* border: 3px solid rgb(41, 218, 41); */
+  display: none;
 
   bottom: 5%;
   right: 10%;
 }
 
 .projectImage{
-  border: 3px solid black;
+  /* border: 3px solid black; */
+  border: none;
   border-radius: 10%;
 
   height: 36vh;
@@ -78,7 +81,8 @@
 }
 
 .projectTitle{
-  border: 3px solid red;
+  /* border: 3px solid red; */
+  border: none;
 
   height: 6vh;
   width: 44%;
@@ -90,7 +94,8 @@
 }
 
 .projectDescription{
-  border: 3px solid orange;
+  /* border: 3px solid orange; */
+  border: none;
   
   height: 24vh;
   width: 44%;
@@ -100,16 +105,34 @@
   transform: translateY(-50%);
   top: 50%;
   right: 2%;
+
+  display: flex;
+  align-items: center;
+}
+
+.projectDescription p{
+  font-size: 1.6vh;
 }
 
 .projectLinks{
-  border: 3px solid yellow;
+  /* border: 3px solid yellow; */
+  border: none;
   
-  height: 6vh;
+  height: 5vh;
   width: 44%;
   
   position: absolute;
 
   bottom: 0;
   right: 2%;
+}
+
+.projectLinks p{
+  font-size: 1.6vh;
+}
+
+#projectImage1{
+  background-image: url(assets/fixable_logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
