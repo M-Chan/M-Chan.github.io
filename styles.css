@@ -1,55 +1,44 @@
-*{
-	padding: 0;
-	margin: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: cursive;
 }
 
-body {
+section {
+  height: 100vh;
+
+  scroll-snap-align: start;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.container::-webkit-scrollbar{
   background-image: linear-gradient(to bottom, rgba(107, 0, 190, 0.76), #31cdff);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 20px;
 }
 
-.header {
-  padding: 24px;
-  text-align: center;
-  line-height: 70px;
+.container::-webkit-scrollbar-button{
+  height: 5vh;
+  /* background-color: rgba(86, 46, 231, 0.938); */
+  background-color: rgb(95, 134, 231);
 }
 
-a:link, a:visited, a:hover, a:active {
+.container::-webkit-scrollbar-thumb{
+  /* background-color: rgba(255, 255, 255, 0.712); */
+  background-color: rgb(95, 134, 231);
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  color: white;
   text-decoration: none;
-}
-
-.linkButtons {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 5px rgba(169, 89, 230, 0.685);
-  border-radius: 10px;
-  border: 3px solid rgba(255, 255, 255, 0.15);
-  z-index: 2;
-}
-
-#githubButton {
-  background-image: url(assets/GitHub.png);
-  background-repeat: no-repeat;
-  background-position: center;
-
-	background-size: 80%;
-	
-  width: 10vw;
-	height: 8vh;
-
-  position: absolute;
-  top: 50px;
-  right: 4vw;
-}
-
-.mainText {
-  margin-top: 0;
-  margin-left: 4vw;
-  margin-right: 4vw;
-
-  font-family: "perpetua, helvetica";
-  font-size: 20px;
-  text-align: center;
-  line-height: 35px;
 }

@@ -1,0 +1,41 @@
+#page1 {
+  background-image: linear-gradient(to bottom, rgba(107, 0, 190, 0.76), #31cdff);
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'oleo script', verdana;
+  font-size: 13vh;
+}
+
+#page1 h1{
+  position:absolute;
+  top: 28%;
+  color: white;
+}
+
+#page1 h1:hover{
+  font-size: 20vh;
+  animation: spin 1750ms linear;
+}
+
+@keyframes spin{
+  100% {transform: rotate(360deg)}
+}
+
+#page1 footer{
+  position: absolute;
+  bottom: 5%;
+}
+
+footer li{
+  display: inline-block;
+  font-size: 5vh;
+}
+
+footer li:hover{
+  font-size: 8vh;
+}
