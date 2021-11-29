@@ -93,6 +93,14 @@
   right: 2%;
 }
 
+.projectTitle h3{
+  font-size: 2.25vh;
+}
+
+.projectTitle h6{
+  font-size: 1.5vh;
+}
+
 .projectDescription{
   /* border: 3px solid orange; */
   border: none;
