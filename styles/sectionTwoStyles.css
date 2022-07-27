@@ -5,7 +5,6 @@
 }
 
 #profilePhoto{
-  /* border: 3px solid black; */
   border-radius: 50%;
   
   height: 40vh;
@@ -17,13 +16,12 @@
   top: 50%;
   left: 20%;
 
-  background-image: url(assets/profilePicture.jpg);
+  background-image: url("./../assets/profilePicture.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 #aboutMeTitle{
-  /* border: 3px solid blue; */
   border: none;
   height: 8vh;
   width: 36%;
@@ -37,7 +35,6 @@
 }
 
 #aboutMeText {
-  /* border: 3px solid black; */
   border: none;
   height: 20vh;
   width: 36%;
