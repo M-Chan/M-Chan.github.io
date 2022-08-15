@@ -15,67 +15,32 @@
   color: white;
 }
 
-#page1 h1:hover{
-  animation: spin 1750ms linear;
-}
+#page1 h1:hover{animation: spin 1750ms linear;}
 
 @keyframes spin{
   100% {transform: rotate(360deg)}
 }
 
-#page1 footer{
-  position: absolute;
-}
+#page1 footer{position: absolute;}
+footer li{display: inline-block;}
 
-footer li{
-  display: inline-block;
-}
 
 @media only screen and (min-width: 400px) { /* modelled using desktop in Chrome */
-  #page1 {
-    font-size: 13vh;
-  }
+  #page1 {font-size: 13vh;}
+  #page1 h1{top: 28%;}
+  #page1 h1:hover{font-size: 20vh;}
 
-  #page1 h1{
-    top: 28%;
-  }
-
-  #page1 h1:hover{
-    font-size: 20vh;
-  }
-
-  #page1 footer{
-    bottom: 5%;
-  }
-
-  footer li{
-    font-size: 5vh;
-  }
-
-  footer li:hover{
-    font-size: 8vh;
-  }
+  #page1 footer{bottom: 5%;}
+  footer li{font-size: 5vh;}
+  footer li:hover{font-size: 8vh;}
 }
 
 
 @media only screen and (max-width: 400px) { /* modelled using iPhone SE in Chrome */
-  #page1 {
-    font-size: 12vw;
-  }
+  #page1 {font-size: 12vw;}
+  #page1 h1{top: 40%;}
+  #page1 h1:hover{font-size: 14vw;}
   
-  #page1 h1{
-    top: 40%;
-  }
-  
-  #page1 h1:hover{
-    font-size: 14vw;
-  }
-  
-  #page1 footer{
-    bottom: 5%;
-  }
-  
-  footer li{
-    font-size: 5vw;
-  }
+  #page1 footer{bottom: 5%;}
+  footer li{font-size: 5vw;}
 }
