@@ -8,17 +8,14 @@
   align-items: center;
 
   font-family: 'oleo script', verdana;
-  font-size: 13vh;
 }
 
 #page1 h1{
   position:absolute;
-  top: 28%;
   color: white;
 }
 
 #page1 h1:hover{
-  font-size: 20vh;
   animation: spin 1750ms linear;
 }
 
@@ -28,14 +25,57 @@
 
 #page1 footer{
   position: absolute;
-  bottom: 5%;
 }
 
 footer li{
   display: inline-block;
-  font-size: 5vh;
 }
 
-footer li:hover{
-  font-size: 8vh;
+@media only screen and (min-width: 400px) { /* modelled using desktop in Chrome */
+  #page1 {
+    font-size: 13vh;
+  }
+
+  #page1 h1{
+    top: 28%;
+  }
+
+  #page1 h1:hover{
+    font-size: 20vh;
+  }
+
+  #page1 footer{
+    bottom: 5%;
+  }
+
+  footer li{
+    font-size: 5vh;
+  }
+
+  footer li:hover{
+    font-size: 8vh;
+  }
+}
+
+
+@media only screen and (max-width: 400px) { /* modelled using iPhone SE in Chrome */
+  #page1 {
+    font-size: 12vw;
+  }
+  
+  #page1 h1{
+    top: 40%;
+  }
+  
+  #page1 h1:hover{
+    font-size: 14vw;
+  }
+  
+  #page1 footer{
+    bottom: 5%;
+  }
+  
+  footer li{
+    font-size: 5vw;
+  }
 }
