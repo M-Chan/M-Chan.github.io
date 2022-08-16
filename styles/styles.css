@@ -51,5 +51,5 @@ a:hover{
       position: relative;
   }
 
-  .container {overflow-y: hidden;}
+  .container {overflow-x: hidden; overflow-y: hidden;}
 }

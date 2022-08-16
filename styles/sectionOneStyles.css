@@ -41,6 +41,6 @@ footer li{display: inline-block;}
   #page1 h1{top: 40%;}
   #page1 h1:hover{font-size: 14vw;}
   
-  #page1 footer{bottom: 5%;}
+  #page1 footer{bottom: 10%;}
   footer li{font-size: 5vw;}
 }
