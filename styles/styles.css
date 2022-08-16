@@ -46,6 +46,6 @@ a:hover{
 @media only screen and (max-width: 400px) { /* modelled using iPhone SE in Chrome */
   .is--hidden{display: none;}
 
-  .container, section {height: 100%;}
+  body {height: 100%;}
   .container {overflow-y: hidden;}
 }
