@@ -38,6 +38,8 @@ a:hover{
     /* background-color: rgba(255, 255, 255, 0.712); */
     background-color: rgb(95, 134, 231);
   }
+
+  #menuIcon, #menu{display: none;}
 }
 
 
