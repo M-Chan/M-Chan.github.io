@@ -6,7 +6,7 @@
   font-family: cursive;
 }
 
-.container, section {height: 100vh;}
+
 
 a{color: black;}
 a:hover{
@@ -16,6 +16,8 @@ a:hover{
 
 
 @media only screen and (min-width: 400px) { /* modelled using desktop in Chrome */
+  .container, section {height: 100vh;}
+  
   .container {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
@@ -44,5 +46,6 @@ a:hover{
 @media only screen and (max-width: 400px) { /* modelled using iPhone SE in Chrome */
   .is--hidden{display: none;}
 
+  .container, section {height: 100%;}
   .container {overflow-y: hidden;}
 }
