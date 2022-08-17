@@ -1,8 +1,4 @@
-#page3 {
-  display: block;
-  position: relative;
-  background-image: linear-gradient(to bottom, rgba(107, 0, 190, 0.76), #31cdff);
-}
+#page3 {display: block;}
 
 #myProjectsTitle {
   border: none;
