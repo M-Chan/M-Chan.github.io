@@ -8,9 +8,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/menuStyles.css">
+    <link rel="stylesheet" href="./styles/navigationBarStyles.css">
     <link rel="stylesheet" href="./styles/sectionOneStyles.css">
-    <link rel="stylesheet" href="./styles/sectionTwoStyles.css">
-    <link rel="stylesheet" href="sectionThreeStyles.css">
 
     <title>M-Chan</title>
 </head>
@@ -27,7 +26,15 @@
               </ul> 
         </div>
 
-        <section id="page1" class="">
+        <section id="page1">
+            <header>
+                <nav>
+                    <a href="/index.html">Home</a>
+                    <a href="./Pages/about.html">About</a>
+                    <a href="./Pages/projects.html">Projects</a>
+                </nav>
+            </header>
+
 			<h1>M-Chan</h1>
 
             <footer>
@@ -43,119 +50,6 @@
                     </li>
                 </ul>
             </footer>
-        </section>
-
-        <section id="page2" class="desktop--only">
-            <div id="profilePhoto"></div>
-            
-            <div id="aboutMeTitle"><h1>About Me</h1></div>
-
-            <div id="aboutMeText">
-                <p>
-                    Hey, I'm TingTing! 👋<br>
-                    I am an Experimental Physics student independently learning to code. Here, on this website, I will be showcasing the programming projects that I have worked on which you can see in the next section below.
-                    In the above section, you can find a link to my Github where you can find my repositories containing the code used to build these projects and the people who I've collaborated with.
-                </p>
-            </div>
-        </section>
-
-        <section id="page3" class="desktop--only">
-            <div id="myProjectsTitle"><h1>My Projects</h1></div>
-
-            <div id="projectBox1" class="projectBox">
-                <div id="projectImage1" class="projectImage"></div>
-
-                <div class="projectTitle">
-                    <h3>Fixable App</h3>
-                    <h6>(April 2021 - Athena Hackathon)</h6>
-                    <hr>
-                </div>
-
-                <div class="projectDescription">
-                    <p>
-                        My very first Hackathon!
-                        <br> The theme of this Hackathon was Circular Economy. I worked with 4 other people around the world to create a
-                        community app.
-                        <br> I used Android Studio and Flutter programming in Dart whilst my team mates did the wireframing and design using Figma
-                    </p>
-                </div>
-
-                <div class="projectLinks">
-                    <p>
-                        Check out the <a href="https://github.com/M-Chan/The_codebrewers">repo</a>
-                    </p>
-                    <p>
-                        Check out the <a href="https://devpost.com/software/fixable-community-powered-repair-app"> Devpost project</a>
-                    </p>
-                </div>
-            </div>
-
-            <div id="projectBox2" class="projectBox">
-                <div id="projectImage2" class="projectImage"></div>
-
-                <div class="projectTitle">
-                    <h3>Phyphox Arduino</h3>
-                    <h6>(Summer 2021 - Physics Internship)</h6>
-                    <hr>
-                </div>
-
-                <div class="projectDescription">
-                    <p>
-                        Worked with Arduinos (Uno and Nano) programming in C++ <br>
-                        Also used XML to create the .phyphox files which can be directly loaded onto the mobile app <br>
-
-                        The aim of the project was to remotely access the Arduino's sensors and to be able to visualise the data as seen in the 
-                        image to the left.
-                    </p>
-                </div>
-
-                <div class="projectLinks">
-                    <p>
-                        Check out the <a href="https://github.com/M-Chan/phyphox-arduino-summer-2021">repo</a>
-                    </p>
-                </div>
-            </div>
-
-            <div id="projectBox3" class="projectBox">
-                <div id="projectImage3" class="projectImage"></div>
-
-                <div class="projectTitle">
-                    <h3>Chess Game</h3>
-                    <h6>(Summer 2021)</h6>
-                    <hr style="color:white;">
-                </div>
-
-                <div class="projectDescription">
-                    <p>
-                        Set up and led a project working remotely with students from different unis via Discord.
-                        <br> We used Vanilla JS to create the game. Although the game is unfinished, I have learnt a lot of logic
-                        and a bit of Web Dev, both front-end and back-end.
-                        <br> The next steps would be to finish the game by implementing checkmate and then implement Socket.io
-                    </p>
-                </div>
-
-                <div class="projectLinks">
-                    <p>
-                        Check out the <a href="https://github.com/M-Chan/online-chess">repo</a>
-                    </p>
-                    <p>
-                        Play the game <a href="https://m-chan.github.io/online-chess/">here</a>
-                    </p>
-                </div>
-            </div>
-
-            <div id="projectBox4" class="projectBox">
-                <div id="projectImage4" class="projectImage"></div>
-
-                <div class="projectTitle">
-                    <hr>
-                </div>
-
-                <div class="projectDescription"></div>
-
-                <div class="projectLinks"></div>
-
-            </div>
         </section>
     </div>
 
