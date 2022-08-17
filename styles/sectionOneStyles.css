@@ -2,13 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  font-family: 'oleo script', verdana;
 }
 
 #page1 h1{
   position:absolute;
   color: white;
+  font-family: 'oleo script';
 }
 
 #page1 h1:hover{animation: spin 1750ms linear;}
@@ -20,7 +19,6 @@
 #page1 footer{position: absolute;}
 footer li{
   display: inline-block;
-  font-family: verdana;
 }
 
 

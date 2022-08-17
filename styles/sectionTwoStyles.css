@@ -38,6 +38,7 @@
     grid-column: 1;
     grid-row: 2;
 
+    font-family: 'oleo script';
     font-size: 4vh;
   }
   #aboutMeTitleMobile{display: none;}
@@ -72,6 +73,7 @@
     grid-column: 1 / 4;
     grid-row: 1;
 
+    font-family: 'oleo script';
     font-size: 3.5vh;
     text-align: center;
   }
@@ -110,7 +112,6 @@
   }
   
   #aboutMeText {
-    font-family: verdana;
     font-size: 2vh;
     text-align: center;
     overflow-wrap: break-word;

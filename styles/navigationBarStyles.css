@@ -19,7 +19,8 @@ header {
   }
 
 
-  nav {
+  nav{
+    font-family: 'oleo script';
     font-size: 4vh;
     text-align: center;
   }
