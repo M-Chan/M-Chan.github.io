@@ -1,7 +1,15 @@
 #page2 {
-  display: block;
-  position: relative;
-  background-image: linear-gradient(to top, rgba(107, 0, 190, 0.76), #31cdff);
+  display: grid;
+  grid-template-columns: 50vw 40vw 10vw;
+  grid-template-rows: 15vh 85vh;
+}
+
+#aboutBox1{
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #profilePhoto{
@@ -10,40 +18,30 @@
   height: 40vh;
   width: 40vh;
 
-  position: absolute;
-  transform: translateX(-50%);
-  transform: translateY(-50%);
-  top: 50%;
-  left: 20%;
-
   background-image: url("./../assets/profilePicture.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-#aboutMeTitle{
-  border: none;
-  height: 8vh;
-  width: 36%;
+#aboutBox2{
+  grid-column: 2;
+  grid-row: 2;
 
-  position: absolute;
-  transform: translateX(-50%);
-  top: 36%;
-  left: 75%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 25vh 10vh auto; /* adds to 90vh */
+}
+
+#aboutMeTitle{
+  grid-column: 1;
+  grid-row: 2;
 
   font-size: 4vh;
 }
 
 #aboutMeText {
-  border: none;
-  height: 20vh;
-  width: 36%;
-
-  position: absolute;
-  transform: translateX(-50%);
-  /* transform: translateY(-50%); */
-  top: 46%;
-  left: 75%;
+  grid-column: 1;
+  grid-row: 3;
 
   font-size: 2.5vh;
   overflow-wrap: break-word;
