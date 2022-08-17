@@ -14,6 +14,8 @@ a:hover{
   text-decoration: none;
 }
 
+.is--hidden{display: none;}
+
 
 @media only screen and (min-width: 400px) { /* modelled using desktop in Chrome */
   .container {
@@ -39,12 +41,12 @@ a:hover{
     background-color: rgb(95, 134, 231);
   }
 
-  #menuIcon, #menu{display: none;}
+  .mobile--only{display: none;}
 }
 
 
 @media only screen and (max-width: 400px) { /* modelled using iPhone SE in Chrome */
-  .is--hidden{display: none;}
+  .desktop--only{display: none;}
 
   html{overflow: hidden;}
 
