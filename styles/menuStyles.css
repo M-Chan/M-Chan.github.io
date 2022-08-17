@@ -47,3 +47,14 @@
     background-size: 100%;
     filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(90deg) brightness(100%) contrast(100%);
 }
+
+#menu ul{
+    list-style-type:none;
+    
+    position: absolute;
+    top: 16%;
+    left: 12%;
+
+    font-size: 5vw;
+    line-height: 5vh;
+}
