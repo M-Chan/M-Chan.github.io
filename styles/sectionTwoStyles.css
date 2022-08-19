@@ -57,7 +57,7 @@
   #page2 {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 20vh 40vh auto;
+    grid-template-rows: 17.5vh 40vh auto;
   }
 
   #aboutBox1{
