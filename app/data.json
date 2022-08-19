@@ -1,0 +1,20 @@
+[
+    {
+    "name": "Fixable App",
+    "images": "../assets/fixable_logo.png",
+    "date+type": "April 2021 - Athena Hackathon",
+    "description": "Hack Description"
+    },
+    {
+    "name": "Phyphox + Arduino",
+    "images": "../assets/Phyphox-Experiment.jpg",
+    "date+type": "Summer 2021 - Physics Internship",
+    "description": "Physics Project Description"
+    },
+    {
+    "name": "Chess Game",
+    "images": "../assets/whiteKing.png",
+    "date+type": "Summer 2021",
+    "description": "Chess Description"
+    }
+]
