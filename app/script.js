@@ -1,5 +1,6 @@
 // defining variables
 let totalProjects;
+let currentProject = 0;
 let projectNames = [];
 let projectImages = [];
 let projectDates_Types = [];
@@ -49,4 +50,25 @@ fetch('./../app/data.json')
     shortDes.innerHTML = projectDates_Types[0];
     description.innerHTML = projectDescriptions[0]; 
     // console.log(title, shortDes, image, description);
+
+    currentProject = 0;
 })
+
+
+function nextProject() {
+  if(currentProject === (totalProjects - 1)) {
+      currentProject = 0; //go back to the first project if reached the end
+  }
+  else currentProject++; //move along by one project
+
+  console.log(currentProject);
+
+  title.innerHTML = projectNames[currentProject];
+  image.setAttribute('style', 'background-image: url(' + projectImages[currentProject] + ');');
+  shortDes.innerHTML = projectDates_Types[currentProject];
+  description.innerHTML = projectDescriptions[currentProject];
+
+  setTimeout(nextProject, 5000); // will now auto to the next projetc every 5s
+};
+
+nextProject(); // calls the 'nextProject' function to start

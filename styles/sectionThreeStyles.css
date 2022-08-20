@@ -42,10 +42,8 @@
   }
 
   #image{
-    min-width: 40vw;
-    max-width: 50vw;
-    min-height: 60vh;
-    max-height: 80vh;
+    width: 40vw;
+    height: 80vh;
 
     background-repeat: no-repeat;
     background-size: 75%;
