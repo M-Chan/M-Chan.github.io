@@ -8,7 +8,7 @@ let projectDescriptions = [];
 const title = document.querySelector(".projectTitle");
 const image = document.querySelector("#image");
 const shortDes = document.querySelector(".shortDescription");       
-const description = document.querySelector("#projectDescription");  
+const description = document.querySelector(".projectDescription");  
 
 let buttonContainer = document.querySelector("#buttonsContainer");
 let childButton = document.createElement("div");
@@ -48,6 +48,6 @@ fetch('./../app/data.json')
     title.innerHTML = projectNames[0];
     image.setAttribute('style', 'background-image: url(' + projectImages[0] + ');');
     shortDes.innerHTML = projectDates_Types[0];
-    // description.innerHTML = projectDescriptions[0]; 
+    description.innerHTML = projectDescriptions[0]; 
     console.log(title, shortDes, image, description);
 })
