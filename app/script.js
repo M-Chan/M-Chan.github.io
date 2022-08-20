@@ -35,6 +35,7 @@ fetch('./../app/data.json')
       projectDescriptions.push(data[i].description);
 
       console.log(buttonContainer);
+      childButton.id = "Button" + [i];
       buttonContainer.appendChild(childButton.cloneNode(true));
     }
     // console.log("project names are", projectNames);
