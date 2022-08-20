@@ -9,9 +9,6 @@
   overflow-x: hidden;
   overflow-y: hidden;
 
-  position: absolute;
-  display: block;
-
   background-image: linear-gradient(to bottom, rgba(107, 0, 190, 0.76), #31cdff);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -26,8 +23,17 @@
   background-size: 100%;
 }
 
+#errorMessage, #note{text-align: center;}
+
+a:link, a:visited, a:active {color: black;}
+
 
 @media only screen and (min-width: 400px) { /* modelled using desktop in Chrome */
+  .container{
+    position: absolute;
+    display: block;
+  }
+
   #error{
     width: 50%;
     height: 50%;
@@ -48,7 +54,6 @@
     top: 75%;
     left: 50%;
 
-    text-align: center;
     font-size: 3vh;
   }
 
@@ -63,16 +68,49 @@
     top: 84%;
     left: 50%;
 
-    text-align: center;
     font-size: 3vh;
-  }
-
-  a:link, a:visited, a:active {
-    color: black;
   }
 
   a:hover {
     text-decoration: none;
     color: white;
+  }
+}
+
+
+@media only screen and (max-width: 400px) { /* modelled using iphone SE in Chrome */
+  .container{
+    display: grid;
+    grid-template-columns: 15vw auto 15vw;
+    grid-template-rows: 28vh 20vh 4vh 10vh 7.5vh auto;
+  }
+
+  #error{
+    width: 67.5vw;
+    height: auto;
+    
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  #errorMessage{
+    height: auto;
+    width: 100vw;
+
+    grid-column: 1 / 4;
+    grid-row: 4;
+
+    font-size: 5.25vw;
+  }
+
+  #note {
+    height: 10vh;
+    width: 100vw;
+
+    grid-column: 1 / 4;
+    grid-row: 6;
+
+    font-size: 5.25vw;
+    line-height: 4vh;
   }
 }
