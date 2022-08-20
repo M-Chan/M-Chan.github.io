@@ -13,7 +13,6 @@ const description = document.querySelector(".projectDescription");
 let buttonContainer = document.querySelector("#buttonsContainer");
 let childButton = document.createElement("div");
 childButton.classList.add("positionButton");
-const cloneButton = childButton.cloneNode(true);
 
 
 // fetchign data from JSON file and using the data
@@ -36,7 +35,6 @@ fetch('./../app/data.json')
       projectDescriptions.push(data[i].description);
 
       console.log(buttonContainer);
-      console.log(cloneButton);
       buttonContainer.appendChild(childButton.cloneNode(true));
     }
     // console.log("project names are", projectNames);
@@ -49,5 +47,5 @@ fetch('./../app/data.json')
     image.setAttribute('style', 'background-image: url(' + projectImages[0] + ');');
     shortDes.innerHTML = projectDates_Types[0];
     description.innerHTML = projectDescriptions[0]; 
-    console.log(title, shortDes, image, description);
+    // console.log(title, shortDes, image, description);
 })
