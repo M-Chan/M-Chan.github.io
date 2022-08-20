@@ -98,7 +98,72 @@
 @media only screen and (max-width: 400px) { /* modelled using iphone SE in Chrome */
   #page3 {
     display: grid;
+    grid-template-columns: 5vw auto 5vw;
+    grid-template-rows: 15vh 10vh 27.5vh 7.5vh 10vh auto;
+  }
+
+  #myProjectsTitle{
+    grid-column: 1 / 4;
+    grid-row: 2;
+    text-align: center;
+    font-size: 4vh;
+  }
+            
+  .imageBox{
+    grid-column: 1 / 4;
+    grid-row: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #image{
+    width: 35vw;
+    height: 25vh;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  #buttonsContainer{
+    grid-column: 1 / 4;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+  }
+
+  .positionButton{
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .project{
+    grid-column: 2;
+    grid-row: 5;
+    display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-rows: auto auto;
+  }
+
+  .projectTitle{
+    grid-row: 1;
+
+    font-size: 4vh;
+  }
+  .shortDescription{
+    grid-row: 2;
+
+    font-size: 2vh;
+  }
+				
+  .projectDescription{
+    grid-column: 2;
+    grid-row: 6;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 2vh;
   }
 }
