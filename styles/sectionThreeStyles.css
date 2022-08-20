@@ -13,6 +13,10 @@
 
 .positionButton--active{background-color: white;}
 
+.projectTitle, .shortDescription, .projectDescription{font-family: 'Poppins';}
+.projectTitle{font-weight: 700;}
+.shortDescription, .projectDescription{font-weight: 400;}
+
 
 @media only screen and (min-width: 400px) { /* modelled using desktop in Chrome */
   #page3 {

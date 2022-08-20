@@ -47,6 +47,7 @@
     grid-column: 1;
     grid-row: 3;
 
+    font-family: 'Poppins';
     font-size: 2.5vh;
     overflow-wrap: break-word;
   }
@@ -112,7 +113,8 @@
   }
   
   #aboutMeText {
-    font-size: 2vh;
+    font-family: 'Poppins';
+    font-size: 1.8vh;
     text-align: center;
     overflow-wrap: break-word;
   }
