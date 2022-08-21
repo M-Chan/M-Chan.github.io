@@ -67,6 +67,7 @@ async function updateProject() {
   description.innerHTML = projectDescriptions[currentProject];
 
   deactivateButtons();
+  setTimeout(nextProject, 5000);
 };
 
 async function makeButtons(){
@@ -93,7 +94,7 @@ async function deactivateButtons(){ // should remove active button from all | no
 }
 
 async function nextProject() {
-  if(currentProject === (totalProjects - 1)) {
+  if(currentProject >= (totalProjects - 1)) {
       currentProject = 0; //go back to the first project if reached the end
   }
   else currentProject++; //move along by one project
