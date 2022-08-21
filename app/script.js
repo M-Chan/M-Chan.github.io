@@ -67,7 +67,6 @@ async function updateProject() {
   description.innerHTML = projectDescriptions[currentProject];
 
   deactivateButtons();
-  nextProject();
 };
 
 async function makeButtons(){
@@ -81,7 +80,6 @@ async function makeButtons(){
     mainItem.classList.add("positionButton--active");
     currentProject = mainItem.id.slice(-1);
     console.log("id no. =", mainItem.id.slice(-1));
-    clearInterval(nextProject);
     updateProject();
     })
   })
