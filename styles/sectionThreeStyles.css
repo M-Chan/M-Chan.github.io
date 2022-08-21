@@ -11,7 +11,11 @@
   margin: 0.75vw;
 }
 
-.positionButton--active{background-color: white;}
+.positionButton--active{
+  background-color: white;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
 
 .projectTitle, .shortDescription, .projectDescription{font-family: 'Poppins';}
 .projectTitle{font-weight: 700;}
@@ -91,6 +95,12 @@
     background-color: white;
     mix-blend-mode: normal;
     opacity: 0.5;
+  }
+
+  .positionButton--active:hover{
+    background-color: white;
+    mix-blend-mode: normal;
+    opacity: 0.8;
   }
 }
 
