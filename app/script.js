@@ -16,14 +16,15 @@ let childButton = document.createElement("div");
 childButton.classList.add("positionButton");
 let buttonsList = [];
 
-// fetchign data from JSON file and using the data
-fetch('./../app/data.json')
+async function start(){
+  // fetchign data from JSON file and using the data
+  return await fetch('./../app/data.json')
 
-.then((response)=>{
+  .then((response)=>{
     return response.json();
   })
 
-.then((data)=>{
+  .then((data)=>{
     console.log(data);
     totalProjects = data.length; // defines 'totalProjetcss' from no. of elements in the JSON file
     // console.log("You have", totalProjects, "projects");
@@ -38,7 +39,7 @@ fetch('./../app/data.json')
       console.log(buttonContainer);
       childButton.id = "Button" + [i];
       buttonContainer.appendChild(childButton.cloneNode(true));
-      buttonsList.push(childButton);
+      buttonsList.push(childButton.cloneNode(true));
     }
     // console.log("project names are", projectNames);
     // console.log("project images are", projectImages);
@@ -54,10 +55,30 @@ fetch('./../app/data.json')
     console.log(title, shortDes, image, description, buttonsList);
 
     currentProject = 0;
-})
+  })
+}
 
+async function makeButtons(){
+  let buttons = document.querySelectorAll(".positionButton");
+  buttons.forEach(mainItem => {
+    mainItem.addEventListener('click', () => {
+      console.log("button clicked");
+      buttons.forEach(otherItems => {
+        otherItems.classList.remove("positionButton--active");
+      })
+      mainItem.classList.add("positionButton--active");
+    })
+  })
+}
 
-function nextProject() {
+async function deactivateButtons(){ // should remove active button from all | not working
+  for(let k=0; k<totalProjects; k++){
+    buttonsList[k].classList.remove("positionButton--active");
+    console.log(buttonsList[k]);
+  }
+}
+
+async function nextProject() {
   if(currentProject === (totalProjects - 1)) {
       currentProject = 0; //go back to the first project if reached the end
   }
@@ -70,7 +91,14 @@ function nextProject() {
   shortDes.innerHTML = projectDates_Types[currentProject];
   description.innerHTML = projectDescriptions[currentProject];
 
+  deactivateButtons();
   setTimeout(nextProject, 5000); // will now auto to the next projetc every 5s
 };
 
-nextProject(); // calls the 'nextProject' function to start
+async function startmain(){
+  const start = await this.start();
+  makeButtons();
+  nextProject();  // calls the 'nextProject' function to start
+}
+
+startmain();
