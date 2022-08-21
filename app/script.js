@@ -85,11 +85,13 @@ async function makeButtons(){
   })
 }
 
-async function deactivateButtons(){ // should remove active button from all | not working
-  for(let k=0; k<totalProjects; k++){
-    buttonsList[k].classList.remove("positionButton--active");
-    console.log(buttonsList[k]);
-  }
+async function updateButtons(){ // should remove active button from all + add to new| not working
+  document.querySelectorAll(".positionButton").forEach(items => {
+    items.classList.remove("positionButton--active");
+  })
+  let currentButton = document.querySelector("#Button"+[currentProject]);
+  console.log("current button is", currentButton);
+  currentButton.classList.add("positionButton--active");
 }
 
 async function nextProject() {
@@ -105,7 +107,7 @@ async function nextProject() {
   shortDes.innerHTML = projectDates_Types[currentProject];
   description.innerHTML = projectDescriptions[currentProject];
 
-  deactivateButtons();
+  updateButtons();
   setTimeout(nextProject, 5000); // will now auto to the next projetc every 5s
 };
 
