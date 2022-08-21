@@ -58,6 +58,17 @@ async function start(){
   })
 }
 
+async function updateProject() {
+  console.log(currentProject);
+
+  title.innerHTML = projectNames[currentProject];
+  image.setAttribute('style', 'background-image: url(' + projectImages[currentProject] + ');');
+  shortDes.innerHTML = projectDates_Types[currentProject];
+  description.innerHTML = projectDescriptions[currentProject];
+
+  deactivateButtons();
+};
+
 async function makeButtons(){
   let buttons = document.querySelectorAll(".positionButton");
   buttons.forEach(mainItem => {
@@ -66,7 +77,10 @@ async function makeButtons(){
       buttons.forEach(otherItems => {
         otherItems.classList.remove("positionButton--active");
       })
-      mainItem.classList.add("positionButton--active");
+    mainItem.classList.add("positionButton--active");
+    currentProject = mainItem.id.slice(-1);
+    console.log("id no. =", mainItem.id.slice(-1))
+    updateProject();
     })
   })
 }
