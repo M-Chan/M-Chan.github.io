@@ -2,30 +2,18 @@
     {
     "name": "Fixable App",
     "image": "../assets/fixable_logo.png",
-    "width_Desktop": "34vw",
-    "height_Desktop": "60vh",
-    "width_Mobile": "50vw",
-    "height_Mobile": "25vh",
     "date_type": "(April 2021 - Athena Hackathon)",
     "description": "My very first Hackathon! The theme of this Hackathon was Circular Economy. I worked with 4 other people around the world to create a community app. I used Android Studio and Flutter programming in Dart whilst my team mates did the wireframing and design using Figma"
     },
     {
     "name": "Phyphox + Arduino",
     "image": "../assets/Phyphox-Experiment.jpg",
-    "width_Desktop": "24vw",
-    "height_Desktop": "68vh",
-    "width_Mobile": "32vw",
-    "height_Mobile": "25vh",
     "date_type": "(Summer 2021 - Physics Internship)",
     "description": "Worked with Arduinos (Uno and Nano) programming in C++. Also used XML to create the .phyphox files which can be directly loaded onto the mobile app. The aim of the project was to remotely access the Arduino's sensors and to be able to visualise the data as seen in the image."
     },
     {
     "name": "Chess Game",
     "image": "../assets/whiteKing.png",
-    "width_Desktop": "40vw",
-    "height_Desktop": "68vh",
-    "width_Mobile": "50vw",
-    "height_Mobile": "25vh",
     "date_type": "(Summer 2021)",
     "description": "Set up and led a project working remotely with students from different unis via Discord. We used Vanilla JS to create the game. Although the game is unfinished, I have learnt a lot of logic and a bit of Web Dev, both front-end and back-end.The next steps would be to finish the game by implementing checkmate and then implement Socket.io"
     }

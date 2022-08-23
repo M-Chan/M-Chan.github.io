@@ -5,8 +5,6 @@ let projectNames = [];
 let projectImages = [];
 let projectDates_Types = [];
 let projectDescriptions = [];
-let projectWidths = [];
-let projectHeights = [];
 
 const title = document.querySelector(".projectTitle");
 const image = document.querySelector("#image");
@@ -18,8 +16,6 @@ let childButton = document.createElement("div");
 childButton.classList.add("positionButton");
 let buttonsList = [];
 
-// for media query issues...
-var x = window.matchMedia("(max-width: 400px)") // for mobile
 
 async function start(){
   // fetchign data from JSON file and using the data
@@ -41,17 +37,6 @@ async function start(){
       projectDates_Types.push(data[i].date_type);
       projectDescriptions.push(data[i].description);
 
-      if (x.matches) { // If media query matches for mobile...
-        projectWidths.push(data[i].width_Mobile);
-        projectHeights.push(data[i].height_Mobile);
-        console.log("mobile");
-      }
-      else {
-        projectWidths.push(data[i].width_Desktop);
-        projectHeights.push(data[i].height_Desktop);
-        console.log("desktop");
-      }
-
       console.log(buttonContainer);
       childButton.id = "Button" + [i];
       buttonContainer.appendChild(childButton.cloneNode(true));
@@ -61,19 +46,15 @@ async function start(){
     // console.log("project images are", projectImages);
     // console.log("project dates and types are", projectDates_Types);
     // console.log("project descriptions are", projectDescriptions);
-    console.log("image widths are", projectWidths);
-    console.log("image heights are", projectHeights);
 
     // sets the first project...
     title.innerHTML = projectNames[0];
     image.src = projectImages[0];
-    image.style.width = projectWidths[0];
-    image.style.height = projectHeights[0];
     // image.setAttribute('style', 'background-image: url(' + projectImages[0] + ');');
     shortDes.innerHTML = projectDates_Types[0];
     description.innerHTML = projectDescriptions[0];
     document.querySelector("#Button0").classList.add("positionButton--active")
-    console.log(title, shortDes, image, description, buttonsList, "width = ", image.style.width);
+    console.log(title, shortDes, image, description, buttonsList);
 
     currentProject = 0;
   })
@@ -84,8 +65,6 @@ async function updateProject() {
 
   title.innerHTML = projectNames[currentProject];
   image.src=projectImages[currentProject];
-  image.style.width = projectWidths[currentProject];
-  image.style.height = projectHeights[currentProject];
   // image.setAttribute('style', 'background-image: url(' + projectImages[currentProject] + ');');
   shortDes.innerHTML = projectDates_Types[currentProject];
   description.innerHTML = projectDescriptions[currentProject];
@@ -128,8 +107,6 @@ async function nextProject() {
 
   title.innerHTML = projectNames[currentProject];
   image.src=projectImages[currentProject];
-  image.style.width = projectWidths[currentProject];
-  image.style.height = projectHeights[currentProject];
   // image.setAttribute('style', 'background-image: url(' + projectImages[currentProject] + ');');
   shortDes.innerHTML = projectDates_Types[currentProject];
   description.innerHTML = projectDescriptions[currentProject];
