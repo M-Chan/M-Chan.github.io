@@ -10,11 +10,11 @@
   font-family: 'oleo script';
 }
 
-#page1 h1:hover{animation: spin 1750ms linear;}
+/* #page1 h1:hover{animation: spin 1750ms linear;}
 
 @keyframes spin{
   100% {transform: rotate(360deg)}
-}
+} */
 
 #page1 footer{position: absolute;}
 footer li{
