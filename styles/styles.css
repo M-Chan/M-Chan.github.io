@@ -7,10 +7,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 
-html{overflow: hidden;}
+/* html{overflow: hidden;} */
 
 body{
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
 
