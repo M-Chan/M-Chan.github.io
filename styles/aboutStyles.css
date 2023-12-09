@@ -1,0 +1,66 @@
+#page2 {
+  display: grid;
+  grid-template-columns: 7.5vw 40vw auto 40vw 7.5vw;
+}
+
+@media only screen and (min-width: 400px) { /* modelled using desktop in Chrome */
+  #page1 {font-size: 13vh;}
+  #page1 h1{top: 28%;}
+  #page1 h1:hover{font-size: 20vh;}
+
+  #page1 footer{bottom: 5%;}
+  footer li{font-size: 5vh;}
+  footer li:hover{font-size: 8vh;}
+
+  #leftSide{
+    grid-column: 2;
+    /* background-color: aqua; */
+
+    display: grid;
+    grid-template-rows: 12.5vh 10vh auto;
+  }
+
+  #rightSide{
+    grid-column: 4;
+    display: grid;
+    grid-template-rows: 23vh 30vh 7.5vh 30vh auto;
+    /* background-color: rgb(0, 255, 94); */
+  }
+
+  #history{
+    grid-row: 2;
+    font-size: 4.5vh;
+    align-self: center;
+    /* background-color: blueviolet; */
+  }
+
+  /* .skillsBox{
+    background-color: blueviolet;
+  } */
+
+  .skillHeading{
+    font-size: 3.5vh;
+    text-decoration: underline;
+  }
+
+  #techSkills{
+    grid-row: 2;
+    /* background-color: rgb(226, 177, 43); */
+  }
+
+  #otherSkills{
+    grid-row: 4;
+    /* background-color: rgb(43, 73, 226); */
+  }
+
+}
+
+
+@media only screen and (max-width: 400px) { /* modelled using iPhone SE in Chrome */
+  #page1 {font-size: 12vw;}
+  #page1 h1{top: 40%;}
+  #page1 h1:hover{font-size: 14vw;}
+  
+  #page1 footer{bottom: 10%;}
+  footer li{font-size: 5vw;}
+}
