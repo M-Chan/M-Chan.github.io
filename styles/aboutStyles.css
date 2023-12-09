@@ -33,19 +33,69 @@
     align-self: center;
     /* background-color: blueviolet; */
   }
-
-  /* .skillsBox{
-    background-color: blueviolet;
-  } */
+  
+  .skillsBox{
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 7.5vh auto;
+    grid-template-columns: auto auto auto auto;
+  }
 
   .skillHeading{
+    grid-row: 1;
     font-size: 3.5vh;
     text-decoration: underline;
   }
 
-  #techSkills{
+  .techBox{
     grid-row: 2;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+
+    width: 80%;
+    height: 80%;
+  }
+
+  #techSkills{
     /* background-color: rgb(226, 177, 43); */
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
+  .techSkillLogo{
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    /* background-color: blueviolet; */
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 57.5%;
+  }
+
+  #pythonLogo{
+    background-image: url("../assets/tech_skills_logos/python_logo.png");
+  }
+  #htmlLogo{
+    background-image: url("../assets/tech_skills_logos/HTML5_logo.svg");
+  }
+  #cssLogo{
+    background-image: url("../assets/tech_skills_logos/CSS3_logo.svg");
+  }
+  #jsLogo{
+    background-image: url("../assets/tech_skills_logos/js_logo.png");
+  }
+
+  .techSkillTitle{
+    position: absolute;
+    bottom: 0.75vh;
+    font-size: 2.75vh;
   }
 
   #otherSkills{
