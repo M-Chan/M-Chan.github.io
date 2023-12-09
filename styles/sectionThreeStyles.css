@@ -190,10 +190,14 @@
   .projectDescription{
     grid-column: 2;
     grid-row: 6;
+    margin-top: 2.5vw;
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     font-size: 2vh;
+
+    height: 100%;
+    overflow: auto;
   }
 }
