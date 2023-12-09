@@ -48,12 +48,9 @@
     line-height: 1.5;
   }
 
-  #headline{
-    display: flex;
-    align-items: center;
+  .headline{
     font-size: 4vh;
     line-height: 1.75;
-    color: #909ECC;
   }
 
   .row4{
@@ -100,4 +97,9 @@
   
   #page1 footer{bottom: 10%;}
   footer li{font-size: 5vw;}
+
+.headline{
+  display: flex;
+  align-items: center;
+  color: #909ECC;
 }
