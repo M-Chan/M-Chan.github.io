@@ -55,7 +55,7 @@
 
   .row4{
     display: grid;
-    grid-template-columns: 27vh 27vh 27vh;
+    grid-template-columns: 33% auto 33%;
     grid-row: auto;
   }
 
