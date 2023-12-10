@@ -17,7 +17,7 @@
     /* background-color: aqua; */
 
     display: grid;
-    grid-template-rows: 12.5vh 10vh auto;
+    grid-template-rows: 12.5vh 12.5vh 70vh auto;
   }
 
   #rightSide{
@@ -103,6 +103,81 @@
     /* background-color: rgb(43, 73, 226); */
   }
 
+  #timelineBox{
+    grid-row: 3;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  
+    /* hide scrollbar */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  #timelineBox::after{
+    /* vbar */
+    content: '';
+    /* position: absolute; */
+    position: fixed;
+  
+    width: 1.2vh;
+    height: 70%;
+    background: #909ECC;
+    top: 25%;
+    left: 26.75%;
+  }
+  
+  .eventsContainer{
+    padding: 2.5vh 4.5vh;
+    position: relative;
+    width: 50%;
+  }
+  
+  .eventsContainer.left{left: 0;}
+  .eventsContainer.right{left: 50%;}
+
+  .date{
+    position: absolute;
+    display: inline-block;
+    transform: translateY(-50%);
+    top: 50%;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: bold;
+    color: #909ECC;
+    text-transform: uppercase;
+  
+    letter-spacing: 0.5vh;
+    width: 75%;
+  }
+  
+  .eventsContainer.left .date{left: 42.5vh;}
+  .eventsContainer.right .date{right: 42.5vh;}
+
+  .eventsContainer .event{
+    padding: 3.5vh 3.5vh 3.5vh 3.5vh;
+    background: #909ECC;
+    position: relative;
+    border-radius: 5% 5% 5% 5%;
+  }
+  
+  .eventTitle{
+    font-size: 2.75vh;
+    color: #161D30;
+  }
+  
+  .eventDescription{
+    margin-top: 2vh;
+    font-size: 2vh;
+    line-height: 3vh;
+    color: #192137;
+  }
+  
+   /* Hide scrollbar for Chrome, Safari and Opera */
+   #timelineBox::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 
